@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var favoriteNumber: Int = 42
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Your favorite number is \(favoriteNumber)")
+            NumberView(number: $favoriteNumber)
         }
         .padding()
+    }
+}
+
+struct NumberView: View {
+    @Binding var number: Int
+    
+    var body: some View {
+        Stepper("\(number)", value: $number, in: 0...100)
     }
 }
 

@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F6B59B929864FBA00F55BED /* SwiftUI_StateManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B59B829864FBA00F55BED /* SwiftUI_StateManagmentApp.swift */; };
+		0F6B59B929864FBA00F55BED /* SwiftUI_StateManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B59B829864FBA00F55BED /* SwiftUI_StateManagementApp.swift */; };
 		0F6B59BB29864FBA00F55BED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B59BA29864FBA00F55BED /* ContentView.swift */; };
 		0F6B59BD29864FBB00F55BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F6B59BC29864FBB00F55BED /* Assets.xcassets */; };
 		0F6B59C029864FBB00F55BED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F6B59BF29864FBB00F55BED /* Preview Assets.xcassets */; };
+		0F6B59C92986638800F55BED /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B59C82986638800F55BED /* Counter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F6B59B529864FBA00F55BED /* SwiftUI_StateManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_StateManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F6B59B829864FBA00F55BED /* SwiftUI_StateManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_StateManagmentApp.swift; sourceTree = "<group>"; };
+		0F6B59B529864FBA00F55BED /* SwiftUI_StateManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_StateManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6B59B829864FBA00F55BED /* SwiftUI_StateManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_StateManagementApp.swift; sourceTree = "<group>"; };
 		0F6B59BA29864FBA00F55BED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F6B59BC29864FBB00F55BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F6B59BF29864FBB00F55BED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F6B59C82986638800F55BED /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +37,7 @@
 		0F6B59AC29864FBA00F55BED = {
 			isa = PBXGroup;
 			children = (
-				0F6B59B729864FBA00F55BED /* SwiftUI_StateManagment */,
+				0F6B59B729864FBA00F55BED /* SwiftUI_StateManagement */,
 				0F6B59B629864FBA00F55BED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +45,21 @@
 		0F6B59B629864FBA00F55BED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F6B59B529864FBA00F55BED /* SwiftUI_StateManagment.app */,
+				0F6B59B529864FBA00F55BED /* SwiftUI_StateManagement.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F6B59B729864FBA00F55BED /* SwiftUI_StateManagment */ = {
+		0F6B59B729864FBA00F55BED /* SwiftUI_StateManagement */ = {
 			isa = PBXGroup;
 			children = (
-				0F6B59B829864FBA00F55BED /* SwiftUI_StateManagmentApp.swift */,
+				0F6B59B829864FBA00F55BED /* SwiftUI_StateManagementApp.swift */,
 				0F6B59BA29864FBA00F55BED /* ContentView.swift */,
 				0F6B59BC29864FBB00F55BED /* Assets.xcassets */,
 				0F6B59BE29864FBB00F55BED /* Preview Content */,
+				0F6B59CA298663BE00F55BED /* ObservableObject */,
 			);
-			path = SwiftUI_StateManagment;
+			path = SwiftUI_StateManagement;
 			sourceTree = "<group>";
 		};
 		0F6B59BE29864FBB00F55BED /* Preview Content */ = {
@@ -67,12 +70,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0F6B59CA298663BE00F55BED /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B59C82986638800F55BED /* Counter.swift */,
+			);
+			path = ObservableObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F6B59B429864FBA00F55BED /* SwiftUI_StateManagment */ = {
+		0F6B59B429864FBA00F55BED /* SwiftUI_StateManagement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F6B59C329864FBB00F55BED /* Build configuration list for PBXNativeTarget "SwiftUI_StateManagment" */;
+			buildConfigurationList = 0F6B59C329864FBB00F55BED /* Build configuration list for PBXNativeTarget "SwiftUI_StateManagement" */;
 			buildPhases = (
 				0F6B59B129864FBA00F55BED /* Sources */,
 				0F6B59B229864FBA00F55BED /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUI_StateManagment;
+			name = SwiftUI_StateManagement;
 			productName = SwiftUI_StateManagment;
-			productReference = 0F6B59B529864FBA00F55BED /* SwiftUI_StateManagment.app */;
+			productReference = 0F6B59B529864FBA00F55BED /* SwiftUI_StateManagement.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0F6B59B029864FBA00F55BED /* Build configuration list for PBXProject "SwiftUI_StateManagment" */;
+			buildConfigurationList = 0F6B59B029864FBA00F55BED /* Build configuration list for PBXProject "SwiftUI_StateManagement" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F6B59B429864FBA00F55BED /* SwiftUI_StateManagment */,
+				0F6B59B429864FBA00F55BED /* SwiftUI_StateManagement */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F6B59BB29864FBA00F55BED /* ContentView.swift in Sources */,
-				0F6B59B929864FBA00F55BED /* SwiftUI_StateManagmentApp.swift in Sources */,
+				0F6B59B929864FBA00F55BED /* SwiftUI_StateManagementApp.swift in Sources */,
+				0F6B59C92986638800F55BED /* Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +278,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_StateManagment/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_StateManagement/Preview Content\"";
 				DEVELOPMENT_TEAM = Z76K2Q3HH9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_StateManagment/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_StateManagement/Preview Content\"";
 				DEVELOPMENT_TEAM = Z76K2Q3HH9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F6B59B029864FBA00F55BED /* Build configuration list for PBXProject "SwiftUI_StateManagment" */ = {
+		0F6B59B029864FBA00F55BED /* Build configuration list for PBXProject "SwiftUI_StateManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F6B59C129864FBB00F55BED /* Debug */,
@@ -329,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F6B59C329864FBB00F55BED /* Build configuration list for PBXNativeTarget "SwiftUI_StateManagment" */ = {
+		0F6B59C329864FBB00F55BED /* Build configuration list for PBXNativeTarget "SwiftUI_StateManagement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F6B59C429864FBB00F55BED /* Debug */,
